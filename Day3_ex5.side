@@ -1,0 +1,62 @@
+{
+  "id": "a523a3c0-9354-4f18-8093-a7494c5caa49",
+  "version": "2.0",
+  "name": "Netflix",
+  "url": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+  "tests": [{
+    "id": "a6539767-fa9a-45df-812f-cdefcd827922",
+    "name": "Day3_ex5",
+    "commands": [{
+      "id": "9e6d6c20-bc23-4ae7-88d4-1358db795e29",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe85212f-6034-4571-9ca5-7ae6b091ae32",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1074x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fda701b5-75d0-4ab6-aa61-7b3b296cae70",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-amount",
+      "targets": [
+        ["id=input-amount", "id"],
+        ["name=amount", "name"],
+        ["css=#input-amount", "css:finder"],
+        ["xpath=//input[@id='input-amount']", "xpath:attributes"],
+        ["xpath=//form[@id='form-voucher']/div[7]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7e10503-708b-40dc-a234-91fe2793d17d",
+      "comment": "",
+      "command": "click",
+      "target": "name=agree",
+      "targets": [
+        ["name=agree", "name"],
+        ["css=.form-check-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='agree']", "xpath:attributes"],
+        ["xpath=//form[@id='form-voucher']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a4f532ca-40b2-446f-b396-a7a5153c1f1e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a6539767-fa9a-45df-812f-cdefcd827922"]
+  }],
+  "urls": ["https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb"],
+  "plugins": []
+}
