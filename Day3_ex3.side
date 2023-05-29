@@ -1,0 +1,63 @@
+{
+  "id": "ef718b01-08f1-4207-83cb-d08bd4b5fc6c",
+  "version": "2.0",
+  "name": "Netflix",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "b568a2f3-1f69-4b75-8118-f8d4a5212b8d",
+    "name": "Day3_ex3",
+    "commands": [{
+      "id": "04f9e3e9-4955-432b-8cdc-d000c4170edb",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "d5bc760e-cf79-4ae4-944f-395eda30d67d",
+      "comment": "",
+      "command": "store",
+      "target": "Your Store",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "3896a41a-f0a9-4d5b-8908-3558948c4f45",
+      "comment": "",
+      "command": "store",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": "curl"
+    }, {
+      "id": "9af4ab8f-6ac9-4d39-b74e-caa90fd588bf",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${title}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdea4821-61c3-4cd3-a4a6-66d05d07944c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "dd4b50eb-f360-4b9a-a0be-8f65dfce5468",
+      "comment": "",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "${curl}"
+    }]
+  }],
+  "suites": [{
+    "id": "edf6ecbd-a71a-4bf6-b5bf-71aa7a398a70",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b568a2f3-1f69-4b75-8118-f8d4a5212b8d"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
